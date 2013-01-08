@@ -1,0 +1,37 @@
+package $(Package) $(CSLB){
+	
+	import flash.display.Sprite;
+	import flash.events.Event;
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Sprite $(CSLB){
+		private static var _instance:$(FileName);
+		public function $(FileName)(block:Block){init();};
+		public static function getInstance():$(FileName){
+			if ( _instance == null ) {_instance = new $(FileName)(new Block());};
+			return _instance;
+		}
+		
+		
+		private function init():void
+		{
+			if (stage) onInit();
+			else addEventListener(Event.ADDED_TO_STAGE, onInit);
+		}
+
+		private function onInit(event:Event = null):void 
+		{
+			removeEventListener(Event.ADDED_TO_STAGE, onInit);
+			// entry point
+			
+			$(EntryPoint)
+			
+		}
+		
+		
+	}
+	
+}
+class Block { };

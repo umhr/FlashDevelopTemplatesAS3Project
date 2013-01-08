@@ -1,0 +1,19 @@
+package $(Package) $(CSLB){
+	
+	import flash.display.Sprite;
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Sprite $(CSLB){
+		
+		public function $(FileName)() $(CSLB){
+			init();
+		}
+		private function init():void $(CSLB){
+			$(EntryPoint)
+		}
+		
+	}
+	
+}

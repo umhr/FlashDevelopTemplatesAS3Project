@@ -1,0 +1,24 @@
+package $(Package) $(CSLB){
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) $(CSLB){
+		private static var _instance:$(FileName);
+		public function $(FileName)(block:Block){init();};
+		public static function getInstance():$(FileName){
+			if ( _instance == null ) {_instance = new $(FileName)(new Block());};
+			return _instance;
+		}
+		
+		
+		private function init():void
+		{
+			$(EntryPoint)
+		}
+		
+		
+	}
+	
+}
+class Block { };

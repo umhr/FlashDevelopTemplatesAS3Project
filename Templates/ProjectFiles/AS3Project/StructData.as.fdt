@@ -1,0 +1,28 @@
+package $(Package) $(CSLB){
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) $(CSLB){
+		
+		public function $(FileName)() $(CSLB){
+			$(EntryPoint)
+		}
+		
+		public function clone():$(FileName) {
+			var result:$(FileName) = new $(FileName)();
+			
+			return result;
+		}
+		
+		public function toString():String {
+			var result:String = "$(FileName):{";
+			
+			result += "}";
+			return result;
+		}
+		
+	}
+	
+}
