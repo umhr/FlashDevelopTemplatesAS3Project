@@ -65,10 +65,12 @@ package $(PackageName)$(CSLB){
 			stageHeight = isPC?stage.stageHeight:stage.fullScreenHeight;
 			
 			// http://qiita.com/shohei909/items/07a83b1fbf413fefd962
-			Main.isDebug = function isDebug():Boolean {
-					try { trace(b.$) } catch (e:*) { var b:*= e };
-					return b;
-				}
+			Main.isDebug = isDebug();
+			
+			function isDebug():Boolean {
+				try { trace(b.$) } catch (e:*) { var b:*= e };
+				return b;
+			}
 			
 		}
 	}
